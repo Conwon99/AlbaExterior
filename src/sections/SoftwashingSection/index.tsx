@@ -114,7 +114,7 @@ export const SoftwashingSection = () => {
               <div
                 className="text-sm bg-no-repeat bg-cover bg-center box-border caret-transparent block leading-[20.3px] break-words w-full h-[400px] md:text-[17px] md:h-[500px] md:leading-[24.65px]"
                 style={{
-                  backgroundImage: `url('${encodeURI("/softwashing1.jpg")}')`,
+                  backgroundImage: `url('${encodeURI("/services/softwashing1.jpg")}')`,
                 }}
               />
 

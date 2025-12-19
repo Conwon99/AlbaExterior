@@ -1,0 +1,43 @@
+---
+import { Header } from "@/sections/Header";
+import { Footer } from "@/sections/Footer";
+import { CallButton } from "@/components/CallButton";
+import "../tailwind.css";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="overflow-x-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Alba Exteriors - Professional pressure washing and softwashing services in Paisley and Glasgow, Scotland." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <style>
+      * {
+        max-width: 100%;
+      }
+      html, body {
+        overflow-x: hidden;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body class="text-black text-sm not-italic normal-nums font-normal accent-auto bg-zinc-100 box-border caret-transparent block tracking-[normal] leading-[20.3px] list-outside list-disc break-words overflow-x-hidden overflow-y-auto pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-figtree md:text-[17px] md:leading-[24.65px]">
+    <Header client:load />
+    <main>
+      <slot />
+    </main>
+    <Footer client:load />
+    <CallButton client:load />
+  </body>
+</html>
+
+

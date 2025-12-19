@@ -16,8 +16,8 @@ export const DesktopMenu = () => {
         </div>
       </div>
       <div className="text-sm box-border caret-transparent leading-[20.3px] break-words md:text-[17px] md:leading-[24.65px]"></div>
-      <ul className="relative text-[0px] box-border caret-transparent hidden leading-[0px] list-none break-words text-center mt-5 pl-0 md:block md:mt-0 md:text-right before:accent-auto before:box-border before:caret-transparent before:clear-both before:text-black before:table before:text-[0px] before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-[0px] before:list-outside before:list-none before:break-words before:pointer-events-auto before:text-center before:indent-[0px] before:normal-case before:visible before:border-separate before:font-figtree after:accent-auto after:box-border after:caret-transparent after:clear-both after:text-black after:table after:text-[0px] after:not-italic after:normal-nums after:font-normal after:tracking-[normal] after:leading-[0px] after:list-outside after:list-none after:break-words after:pointer-events-auto after:text-center after:indent-[0px] after:normal-case after:visible after:border-separate after:font-figtree">
-        <li className="relative text-base box-border caret-transparent list-item leading-[23.2px] break-words mx-0 my-[5px] md:inline-block md:mx-[15px]">
+      <ul className="relative text-[0px] box-border caret-transparent hidden leading-[0px] list-none break-words text-center mt-5 pl-0 md:flex md:items-center md:mt-0 md:text-right before:accent-auto before:box-border before:caret-transparent before:clear-both before:text-black before:table before:text-[0px] before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-[0px] before:list-outside before:list-none before:break-words before:pointer-events-auto before:text-center before:indent-[0px] before:normal-case before:visible before:border-separate before:font-figtree after:accent-auto after:box-border after:caret-transparent after:clear-both after:text-black after:table after:text-[0px] after:not-italic after:normal-nums after:font-normal after:tracking-[normal] after:leading-[0px] after:list-outside after:list-none after:break-words after:pointer-events-auto after:text-center after:indent-[0px] after:normal-case after:visible after:border-separate after:font-figtree">
+        <li className="relative text-base box-border caret-transparent list-item leading-[23.2px] break-words mx-0 my-[5px] md:mx-[15px] md:my-0">
           <a
             href="#hero"
             onClick={(e) => {
@@ -34,7 +34,7 @@ export const DesktopMenu = () => {
             </span>
           </a>
         </li>
-        <li className="relative text-base box-border caret-transparent list-item leading-[23.2px] break-words mx-0 my-[5px] md:inline-block md:mx-[15px]">
+        <li className="relative text-base box-border caret-transparent list-item leading-[23.2px] break-words mx-0 my-[5px] md:mx-[15px] md:my-0">
           <a
             href="#about"
             onClick={(e) => {
@@ -51,7 +51,7 @@ export const DesktopMenu = () => {
             </span>
           </a>
         </li>
-        <li className="relative text-base box-border caret-transparent list-item leading-[23.2px] break-words mx-0 my-[5px] md:inline-block md:mx-[15px]">
+        <li className="relative text-base box-border caret-transparent list-item leading-[23.2px] break-words mx-0 my-[5px] md:mx-[15px] md:my-0">
           <a
             href="#services"
             onClick={(e) => {
@@ -68,7 +68,7 @@ export const DesktopMenu = () => {
             </span>
           </a>
         </li>
-        <li className="relative text-base box-border caret-transparent list-item leading-[23.2px] break-words mx-0 my-[5px] md:inline-block md:mx-[15px]">
+        <li className="relative text-base box-border caret-transparent list-item leading-[23.2px] break-words mx-0 my-[5px] md:mx-[15px] md:my-0">
           <a
             href="#contact"
             onClick={(e) => {

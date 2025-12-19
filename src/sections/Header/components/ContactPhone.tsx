@@ -1,20 +1,33 @@
+import { Phone } from "lucide-react";
+
 export const ContactPhone = () => {
   return (
     <div className="text-sm box-border caret-transparent clear-both flex grow float-none leading-[20.3px] min-h-px break-words w-auto mx-auto md:text-[17px] md:clear-none md:float-none md:leading-[24.65px] md:w-auto md:mx-0">
       <div className="text-sm box-border caret-transparent flex flex-col grow justify-center leading-[20.3px] max-w-full min-w-px break-words w-full md:text-[17px] md:leading-[24.65px]">
-        <div className="text-sm box-border caret-transparent leading-[20.3px] break-words md:text-[17px] md:leading-[24.65px] before:accent-auto before:box-border before:caret-transparent before:text-black before:table before:text-sm before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-[20.3px] before:list-outside before:list-disc before:break-words before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-figtree before:md:text-[17px] before:md:leading-[24.65px] after:accent-auto after:box-border after:caret-transparent after:clear-both after:text-black after:table after:text-sm after:not-italic after:normal-nums after:font-normal after:tracking-[normal] after:leading-[20.3px] after:list-outside after:list-disc after:break-words after:pointer-events-auto after:text-start after:indent-[0px] after:normal-case after:visible after:border-separate after:font-figtree after:md:text-[17px] after:md:leading-[24.65px]">
-          <div className="text-sm box-border caret-transparent leading-[20.3px] break-words mb-5 mx-5 md:text-[17px] md:mb-0 md:mx-0 md:leading-[24.65px] before:accent-auto before:box-border before:caret-transparent before:text-black before:table before:text-sm before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-[20.3px] before:list-outside before:list-disc before:break-words before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-figtree before:md:text-[17px] before:md:leading-[24.65px] after:accent-auto after:box-border after:caret-transparent after:clear-both after:text-black after:table after:text-sm after:not-italic after:normal-nums after:font-normal after:tracking-[normal] after:leading-[20.3px] after:list-outside after:list-disc after:break-words after:pointer-events-auto after:text-start after:indent-[0px] after:normal-case after:visible after:border-separate after:font-figtree after:md:text-[17px] after:md:leading-[24.65px]">
+        <div className="text-sm box-border caret-transparent leading-[20.3px] break-words md:text-[17px] md:leading-[24.65px]">
+          <div className="text-sm box-border caret-transparent leading-[20.3px] break-words mb-5 mx-5 md:text-[17px] md:mb-0 md:mx-0 md:leading-[24.65px]">
             <div className="text-sm box-border caret-transparent leading-[20.3px] break-words flex justify-center md:text-[17px] md:justify-start md:leading-[24.65px]">
               <a
                 href="tel://+447857353191"
                 title="Click Here"
                 role="button"
                 aria-label="Call us: 07857 353 191"
-                className="relative text-white text-base font-semibold box-border caret-transparent inline-flex items-center justify-center tracking-[2px] leading-[20px] break-words text-center uppercase align-middle border-sky-300 overflow-hidden px-6 py-3.5 border-2 border-solid rounded-md hover:bg-sky-300/10 transition-colors md:text-sm md:px-4 md:py-2.5 md:leading-[18px] after:accent-auto after:box-border after:caret-transparent after:text-white after:block after:text-base after:not-italic after:normal-nums after:font-semibold after:tracking-[2px] after:leading-[20px] after:list-outside after:list-disc after:break-words after:pointer-events-auto after:absolute after:text-center after:indent-[0px] after:uppercase after:visible after:z-[1] after:border-separate after:font-figtree md:after:text-sm md:after:leading-[18px]"
+                className="relative text-white box-border caret-transparent inline-flex items-center gap-3 break-words px-4 py-2.5 rounded-lg hover:opacity-90 transition-opacity"
               >
-                <span className="box-border caret-transparent break-words whitespace-nowrap">
-                  Call us: 07857 353 191
-                </span>
+                {/* Circular icon with phone */}
+                <div className="flex-shrink-0 w-14 h-14 md:w-16 md:h-16 rounded-full bg-black flex items-center justify-center">
+                  <Phone className="w-7 h-7 md:w-8 md:h-8 text-cyan-400" strokeWidth={2.5} />
+                </div>
+                
+                {/* Text content */}
+                <div className="flex flex-col">
+                  <span className="text-gray-300 text-xs uppercase tracking-wide leading-tight">
+                    CALL US NOW
+                  </span>
+                  <span className="text-white text-3xl md:text-4xl font-extrabold leading-tight tracking-tight">
+                    07857 353 191
+                  </span>
+                </div>
               </a>
             </div>
           </div>

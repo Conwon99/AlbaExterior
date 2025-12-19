@@ -37,7 +37,7 @@ export const BeforeAfterSection = () => {
               <div
                 className="text-sm bg-no-repeat bg-cover bg-center box-border caret-transparent block leading-[20.3px] break-words w-full h-[400px] md:text-[17px] md:h-[500px] md:leading-[24.65px]"
                 style={{
-                  backgroundImage: `url('${encodeURI("/softwashing1.jpg")}')`,
+                  backgroundImage: `url('${encodeURI("/services/softwashing1.jpg")}')`,
                 }}
               />
               <div className="text-sm box-border caret-transparent absolute bottom-0 left-0 right-0 bg-cyan-600/90 leading-[20.3px] break-words px-4 py-3 md:text-[17px] md:leading-[24.65px] md:px-5 md:py-4">

@@ -1,11 +1,36 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 type ProcessGridItem = {
   stepNumber: string;
   title: string;
   description: string;
-  imageUrl: string;
+};
+
+// Helper function to generate image URL from service title
+const getServiceImageUrl = (title: string): string => {
+  // Convert service title to lowercase, remove spaces and special characters
+  const filename = title
+    .toLowerCase()
+    .replace(/\s+/g, '') // Remove spaces
+    .replace(/&/g, '') // Remove &
+    .replace(/[^a-z0-9]/g, ''); // Remove any other special characters
+  
+  // Try common image extensions
+  const extensions = ['.png', '.jpg', '.jpeg'];
+  
+  // For specific services, use exact matches
+  const serviceImageMap: { [key: string]: string } = {
+    'roofcleaning': '/services/roofcleaning.png',
+    'drivewaycleaning': '/services/drivewaycleaning.png',
+    'patiocleaning': '/services/patiocleaning.jpg',
+    'softwashing': '/services/softwashing1.jpg',
+    'pressurewashing': '/services/pressurewashing.png',
+    'guttercleaning': '/services/guttercleaning.jpg',
+    'upvccleaning': '/services/upvccleaning.jpg',
+    'conservatorycleaning': '/services/conservatorycleaning.png',
+  };
+  
+  return serviceImageMap[filename] || `/services/${filename}.jpg`;
 };
 
 const processSteps: ProcessGridItem[] = [
@@ -13,49 +38,41 @@ const processSteps: ProcessGridItem[] = [
     stepNumber: "01",
     title: "Roof Cleaning",
     description: "Professional roof cleaning with biocide treatment to safely remove moss, algae, and grime while protecting your roof for the long term.",
-    imageUrl: "/roofcleaning.png",
   },
   {
     stepNumber: "02",
     title: "Driveway Cleaning",
     description: "Professional driveway cleaning to remove oil stains, moss, algae, and debris, restoring your driveway to its original appearance and improving curb appeal.",
-        imageUrl: "/pressurewashing.png",
   },
   {
     stepNumber: "03",
     title: "Patio Cleaning",
     description: "Professional patio cleaning to remove moss, algae, and stains from your outdoor living space, making it safe, clean, and inviting.",
-        imageUrl: "/pressurewashing.png",
   },
   {
     stepNumber: "04",
     title: "Soft Washing",
     description: "Gentle, effective soft washing for render and roughcast that removes algae and carbon using chemicals applied at low pressure, ensuring no damage to your property.",
-    imageUrl: "/softwashing1.jpg",
   },
   {
     stepNumber: "05",
     title: "Pressure Washing",
     description: "High-pressure cleaning services for hard surfaces to remove dirt, grime, and stains effectively using professional-grade equipment.",
-        imageUrl: "/pressurewashing.png",
   },
   {
     stepNumber: "06",
     title: "Gutter Cleaning",
     description: "Professional gutter cleaning to remove leaves, debris, and blockages, preventing water damage and protecting your property from overflow and foundation issues.",
-    imageUrl: "/roofcleaning.png",
   },
   {
     stepNumber: "07",
     title: "uPVC Cleaning",
     description: "Professional uPVC cleaning for windows, doors, frames, and fascias to remove dirt, algae, and stains, restoring your uPVC to its original bright white appearance.",
-    imageUrl: "/softwashing1.jpg",
   },
   {
     stepNumber: "08",
     title: "Conservatory Cleaning",
     description: "Professional conservatory cleaning including roof, windows, frames, and gutters to maximize natural light and keep your conservatory looking pristine.",
-    imageUrl: "/softwashing1.jpg",
   },
 ];
 
@@ -77,15 +94,15 @@ export const ProcessGrid = () => {
           };
           const servicePath = servicePaths[step.title] || "/";
           return (
-          <Link
+          <a
             key={index}
-            to={servicePath}
+            href={servicePath}
             className="text-sm box-border caret-transparent relative group leading-[20.3px] break-words overflow-hidden aspect-square block md:text-[17px] md:leading-[24.65px]"
           >
             <div
               className="text-sm bg-no-repeat bg-cover bg-center box-border caret-transparent block leading-[20.3px] break-words w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-110 md:text-[17px] md:leading-[24.65px]"
               style={{
-                backgroundImage: `url('${encodeURI(step.imageUrl)}')`,
+                backgroundImage: `url('${encodeURI(getServiceImageUrl(step.title))}')`,
               }}
             >
               {/* Blue overlay at bottom with title - expands on hover */}
@@ -117,7 +134,7 @@ export const ProcessGrid = () => {
                 </div>
               </div>
             </div>
-          </Link>
+          </a>
         )})}
       </div>
     </div>

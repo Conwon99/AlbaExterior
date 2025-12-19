@@ -18,7 +18,8 @@ export const MobileProcessSection = () => {
                               Alba Exteriors
                             </h5>
                             <h3 className="text-neutral-900 text-[25px] italic font-bold box-border caret-transparent clear-both leading-[35px] break-words uppercase mt-[5px] mb-[15px] font-kanit md:text-3xl md:leading-[42px]">
-                              Looking for professional exterior cleaning services in Paisley and Glasgow?
+                              Looking for professional exterior cleaning services<br />
+                              in Paisley and Glasgow?
                             </h3>
                           </div>
                         </div>
