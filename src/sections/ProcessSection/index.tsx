@@ -17,9 +17,13 @@ export const ProcessSection = () => {
                             Alba Exteriors
                           </h5>
                           <h3 className="text-neutral-900 text-[25px] italic font-bold box-border caret-transparent clear-both leading-[35px] break-words uppercase mt-[5px] mb-[15px] font-kanit md:text-3xl md:leading-[42px]">
-                            Looking for professional exterior cleaning services<br />
-                            in Paisley and Glasgow?
+                            Exterior Cleaning Services Paisley and Glasgow Expert Friendly Service
                           </h3>
+                          <div className="text-neutral-700 text-base box-border caret-transparent leading-6 break-words mt-4 mb-6 font-figtree md:text-lg md:leading-7 max-w-3xl mx-auto">
+                            <p>
+                              At Alba Exteriors, we deliver expert, friendly exterior cleaning services throughout Paisley and Glasgow. Our professional team combines years of experience with the latest cleaning techniques and eco-friendly solutions to transform your property's exterior. Fully insured and committed to excellence, we provide reliable, professional results with a customer-first approach.
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>

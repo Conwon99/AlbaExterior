@@ -1,11 +1,61 @@
-import { FooterContent } from "@/sections/Footer/components/FooterContent";
+import { FooterColumn } from "@/sections/Footer/components/FooterColumn";
+import { SocialLinks } from "@/sections/Footer/components/SocialLinks";
+import { FooterBottom } from "@/sections/Footer/components/FooterBottom";
 
 export const Footer = () => {
   return (
-    <footer className="text-sm box-border caret-transparent leading-[20.3px] break-words md:text-[17px] md:leading-[24.65px]">
-      <div className="text-neutral-900 text-sm box-border caret-transparent leading-[20.3px] break-words mx-auto md:text-[17px] md:leading-[24.65px] before:accent-auto before:box-border before:caret-transparent before:text-neutral-900 before:table before:text-sm before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-[20.3px] before:list-outside before:list-disc before:break-words before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-figtree before:md:text-[17px] before:md:leading-[24.65px] after:accent-auto after:box-border after:caret-transparent after:clear-both after:text-neutral-900 after:table after:text-sm after:not-italic after:normal-nums after:font-normal after:tracking-[normal] after:leading-[20.3px] after:list-outside after:list-disc after:break-words after:pointer-events-auto after:text-start after:indent-[0px] after:normal-case after:visible after:border-separate after:font-figtree after:md:text-[17px] after:md:leading-[24.65px]">
-        <FooterContent />
+    <section className="relative bg-[linear-gradient(rgb(0,0,0)_0%,rgb(0,0,0)_100%)] box-border caret-transparent">
+      <div className="relative box-border caret-transparent flex flex-wrap max-w-[1300px] mx-auto md:flex-nowrap">
+        <div className="relative box-border caret-transparent flex min-h-px w-full">
+          <div className="relative content-start box-border caret-transparent flex flex-wrap w-full p-2.5">
+            <section className="relative box-border caret-transparent w-full">
+              <div className="relative box-border caret-transparent flex flex-wrap max-w-[1300px] mx-auto md:flex-nowrap">
+                <FooterColumn
+                  title="Who We Are"
+                  variant="who-we-are"
+                  logoUrl="/alba-logo.png"
+                  logoAlt="Alba Exteriors Logo"
+                  description="Alba Exteriors is a professional exterior cleaning company based in Paisley, serving Scotland. We are dedicated to customer satisfaction and reliability, specializing in pressure washing and softwashing services. Our services include pressure washing for driveways, patios, and hard surfaces, as well as gentle softwashing for render, walls, and delicate surfaces to remove algae, moss, and grime without causing damage."
+                />
+                <FooterColumn
+                  title="Contact Us"
+                  variant="contact-us"
+                  email="info@albaexteriors.co.uk"
+                  emailLabel="Email Us:"
+                  phone="0141 123 4567"
+                  phoneLabel="Call Us:"
+                  address="Paisley, Scotland"
+                  hoursTitle="Hours Of Operation"
+                  hoursContent={
+                    <>
+                      Monday 8:00AM – 5:00PM
+                      <br />
+                      Tuesday 8:00AM – 5:00PM
+                      <br />
+                      Wednesday 8:00AM – 5:00PM
+                      <br />
+                      Thursday 8:00AM – 5:00PM
+                      <br />
+                      Friday 8:00AM – 5:00PM
+                      <br />
+                      Saturday 9:00AM – 2:00PM
+                      <br />
+                      Sunday – Closed
+                    </>
+                  }
+                />
+                <FooterColumn
+                  title="Service Area"
+                  variant="service-area"
+                  mapEmbedUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2280.1234567890123!2d-4.4321!3d55.8456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDUwJzQ0LjIiTiA0wrAyNicwNS42Ilc!5e0!3m2!1sen!2suk!4v1234567890123!5m2!1sen!2suk"
+                />
+              </div>
+            </section>
+            <SocialLinks />
+            <FooterBottom />
+          </div>
+        </div>
       </div>
-    </footer>
+    </section>
   );
 };

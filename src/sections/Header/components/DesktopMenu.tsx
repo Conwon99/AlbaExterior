@@ -51,15 +51,86 @@ export const DesktopMenu = () => {
             </span>
           </a>
         </li>
-        <li className="relative text-base box-border caret-transparent list-item leading-[23.2px] break-words mx-0 my-[5px] md:mx-[15px] md:my-0">
+        <li className="relative text-base box-border caret-transparent list-item leading-[23.2px] break-words mx-0 my-[5px] md:mx-[15px] md:my-0 group">
           <a
             href="/services"
-            className="text-cyan-600 font-semibold box-border caret-transparent block tracking-[1px] leading-4 break-words uppercase py-[5px] hover:text-sky-300 transition-colors"
+            className="text-cyan-600 font-semibold box-border caret-transparent flex items-center gap-1 tracking-[1px] leading-4 break-words uppercase py-[5px] hover:text-sky-300 transition-colors"
           >
             <span className="text-white box-border caret-transparent break-words w-full">
               Services
             </span>
+            <svg
+              className="w-4 h-4 text-white group-hover:text-sky-300 transition-colors"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
           </a>
+          {/* Dropdown Menu */}
+          <div className="absolute left-0 top-full mt-0 w-[250px] bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
+            <a
+              href="/services"
+              className="block px-4 py-2 text-neutral-900 text-sm font-semibold hover:bg-cyan-50 hover:text-cyan-600 transition-colors"
+            >
+              All Services
+            </a>
+            <div className="border-t border-neutral-200 my-1"></div>
+            <a
+              href="/roof-cleaning"
+              className="block px-4 py-2 text-neutral-700 text-sm hover:bg-cyan-50 hover:text-cyan-600 transition-colors"
+            >
+              Roof Cleaning
+            </a>
+            <a
+              href="/driveway-cleaning"
+              className="block px-4 py-2 text-neutral-700 text-sm hover:bg-cyan-50 hover:text-cyan-600 transition-colors"
+            >
+              Driveway Cleaning
+            </a>
+            <a
+              href="/patio-cleaning"
+              className="block px-4 py-2 text-neutral-700 text-sm hover:bg-cyan-50 hover:text-cyan-600 transition-colors"
+            >
+              Patio Cleaning
+            </a>
+            <a
+              href="/soft-washing"
+              className="block px-4 py-2 text-neutral-700 text-sm hover:bg-cyan-50 hover:text-cyan-600 transition-colors"
+            >
+              Soft Washing
+            </a>
+            <a
+              href="/pressure-washing"
+              className="block px-4 py-2 text-neutral-700 text-sm hover:bg-cyan-50 hover:text-cyan-600 transition-colors"
+            >
+              Pressure Washing
+            </a>
+            <a
+              href="/gutter-cleaning"
+              className="block px-4 py-2 text-neutral-700 text-sm hover:bg-cyan-50 hover:text-cyan-600 transition-colors"
+            >
+              Gutter Cleaning
+            </a>
+            <a
+              href="/upvc-cleaning"
+              className="block px-4 py-2 text-neutral-700 text-sm hover:bg-cyan-50 hover:text-cyan-600 transition-colors"
+            >
+              uPVC Cleaning
+            </a>
+            <a
+              href="/conservatory-cleaning"
+              className="block px-4 py-2 text-neutral-700 text-sm hover:bg-cyan-50 hover:text-cyan-600 transition-colors"
+            >
+              Conservatory Cleaning
+            </a>
+          </div>
         </li>
         <li className="relative text-base box-border caret-transparent list-item leading-[23.2px] break-words mx-0 my-[5px] md:mx-[15px] md:my-0">
           <a

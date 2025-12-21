@@ -7,5 +7,12 @@
     },
     "jsx": "react-jsx",
     "jsxImportSource": "react"
-  }
+  },
+  "exclude": [
+    "contractorwebsitetemplate.com_foc303/**/*",
+    "contractorwebsitetemplate.com_google-business-category-1_frbvz5/**/*",
+    "www.bzexteriorcleaning.co.uk_bgcmxu/**/*",
+    "node_modules/**/*",
+    "dist/**/*"
+  ]
 }

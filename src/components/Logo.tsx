@@ -11,7 +11,7 @@ export const Logo = () => {
                   className="text-cyan-600 text-sm box-border caret-transparent break-words md:text-[17px]"
                 >
                   <img
-                    src="/logo_bg_alba_exteriors_paisley.png"
+                    src="/alba-logo.png"
                     alt="Alba Exteriors Logo"
                     sizes="auto, (max-width: 787px) 100vw, 787px"
                     title="Alba Exteriors Logo"
