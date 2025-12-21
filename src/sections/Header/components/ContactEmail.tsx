@@ -8,14 +8,7 @@ export const ContactEmail = () => {
           <div className="text-sm box-border caret-transparent leading-[20.3px] break-words mb-5 mx-5 md:text-[17px] md:mb-0 md:mx-0 md:leading-[24.65px]">
             <div className="text-sm box-border caret-transparent leading-[20.3px] break-words flex justify-center md:text-[17px] md:justify-start md:leading-[24.65px]">
               <a
-                href="#contact"
-                onClick={(e) => {
-                  e.preventDefault();
-                  const element = document.getElementById("contact");
-                  if (element) {
-                    element.scrollIntoView({ behavior: "smooth", block: "start" });
-                  }
-                }}
+                href="/contact"
                 title="Message us"
                 role="button"
                 aria-label="Message us"

@@ -1,0 +1,48 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { ServicesList } from '@/components/ServicesList';
+---
+
+<BaseLayout title="Our Services | Alba Exteriors">
+  <div
+    role="main"
+    class="text-sm bg-white box-border caret-transparent leading-[20.3px] break-words md:text-[17px] md:leading-[24.65px]"
+  >
+    <!-- Hero Section with Background Image -->
+    <div class="relative text-sm box-border caret-transparent flex items-center justify-center leading-[20.3px] break-words h-[400px] md:text-[17px] md:h-[500px] md:leading-[24.65px] overflow-hidden">
+      <div
+        class="absolute inset-0 bg-no-repeat bg-cover bg-center"
+        style={`background-image: url('${encodeURI("/services/pressurewashing.png")}');`}
+      />
+      <div class="absolute inset-0 bg-black/50" />
+      <div class="relative text-sm box-border caret-transparent z-10 leading-[20.3px] break-words text-center md:text-[17px] md:leading-[24.65px]">
+        <h1 class="text-white text-4xl italic font-bold box-border caret-transparent leading-[50px] break-words uppercase font-kanit md:text-6xl md:leading-[70px] drop-shadow-lg">
+          Our Services
+        </h1>
+        <p class="text-white text-xl box-border caret-transparent leading-[28px] break-words mt-4 md:text-2xl md:leading-[32px] drop-shadow-lg">
+          Professional Exterior Cleaning Services in Paisley and Glasgow
+        </p>
+      </div>
+    </div>
+
+    <!-- Services Grid Section -->
+    <div class="relative text-sm items-center box-border caret-transparent flex justify-center leading-[20.3px] break-words px-5 py-10 md:text-[17px] md:leading-[24.65px] md:px-5 md:py-16">
+      <div class="text-sm box-border caret-transparent grow leading-[20.3px] max-w-[1300px] break-words mx-auto md:text-[17px] md:leading-[24.65px]">
+        <div class="text-sm box-border caret-transparent flex flex-col items-center text-center leading-[20.3px] break-words mb-8 md:text-[17px] md:leading-[24.65px] md:mb-12">
+          <h5 class="text-cyan-600 text-base italic font-semibold box-border caret-transparent clear-both tracking-[2px] leading-[22.4px] break-words uppercase font-kanit mb-2">
+            Alba Exteriors
+          </h5>
+          <h2 class="text-neutral-900 text-[25px] italic font-bold box-border caret-transparent clear-both leading-[35px] break-words uppercase font-kanit md:text-3xl md:leading-[42px]">
+            Professional Exterior Cleaning Services
+          </h2>
+          <p class="text-neutral-700 text-base box-border caret-transparent leading-[24px] break-words mt-4 max-w-3xl md:text-lg md:leading-[26px]">
+            We offer a comprehensive range of exterior cleaning services to keep your property looking its best. From roof cleaning to pressure washing, our professional team uses the latest equipment and techniques to deliver exceptional results.
+          </p>
+        </div>
+        
+        <ServicesList client:load />
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+

@@ -36,14 +36,7 @@ export const ServicesCTA = () => {
               </span>
             </a>
             <a
-              href="#contact"
-              onClick={(e) => {
-                e.preventDefault();
-                const element = document.getElementById("contact");
-                if (element) {
-                  element.scrollIntoView({ behavior: "smooth", block: "start" });
-                }
-              }}
+              href="/contact"
               title="Get A Free Quote"
               role="button"
               aria-label="Get A Free Quote"

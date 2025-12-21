@@ -14,12 +14,12 @@ export const ContactForm = () => {
 
   return (
     <form className="text-sm box-border caret-transparent leading-[20.3px] break-words md:text-[17px] md:leading-[24.65px]">
-      <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-6 md:p-10">
+      <div className="bg-white rounded-2xl shadow-lg p-6 md:p-10">
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-6">
           {/* Name - Full width on mobile, half on desktop */}
           <div className="md:col-span-2">
-            <label className="text-white text-base font-semibold block mb-2">
-              Name <span className="text-cyan-300">*</span>
+            <label className="text-neutral-900 text-base font-semibold block mb-2">
+              Name <span className="text-cyan-600">*</span>
             </label>
             <input
               name="input_3"
@@ -32,8 +32,8 @@ export const ContactForm = () => {
           
           {/* Email */}
           <div>
-            <label className="text-white text-base font-semibold block mb-2">
-              Email <span className="text-cyan-300">*</span>
+            <label className="text-neutral-900 text-base font-semibold block mb-2">
+              Email <span className="text-cyan-600">*</span>
             </label>
             <input
               name="input_5"
@@ -46,7 +46,7 @@ export const ContactForm = () => {
           
           {/* Phone */}
           <div>
-            <label className="text-white text-base font-semibold block mb-2">
+            <label className="text-neutral-900 text-base font-semibold block mb-2">
               Phone
             </label>
             <input
@@ -59,7 +59,7 @@ export const ContactForm = () => {
           
           {/* Address - Full width */}
           <div className="md:col-span-2">
-            <label className="text-white text-base font-semibold block mb-2">
+            <label className="text-neutral-900 text-base font-semibold block mb-2">
               Address
             </label>
             <input
@@ -72,7 +72,7 @@ export const ContactForm = () => {
           
           {/* Description - Full width */}
           <div className="md:col-span-2">
-            <label className="text-white text-base font-semibold block mb-2">
+            <label className="text-neutral-900 text-base font-semibold block mb-2">
               Brief Description of the Job / Property
             </label>
             <textarea
@@ -85,7 +85,7 @@ export const ContactForm = () => {
           
           {/* File Upload - Full width */}
           <div className="md:col-span-2">
-            <label className="text-white text-base font-semibold block mb-2">
+            <label className="text-neutral-900 text-base font-semibold block mb-2">
               Upload Photos <span className="text-sm font-normal">(For faster quotes)</span>
             </label>
             <div className="relative">
@@ -105,7 +105,7 @@ export const ContactForm = () => {
                     id="file-upload"
                     onChange={handleFileChange}
                   />
-                  <div className="px-4 py-3.5 bg-white/90 border-2 border-dashed border-white/40 rounded-lg text-neutral-700 text-base hover:bg-white hover:border-cyan-400 transition-all duration-200 cursor-pointer flex items-center justify-center gap-2">
+                  <div className="px-4 py-3.5 bg-neutral-50 border-2 border-dashed border-neutral-300 rounded-lg text-neutral-700 text-base hover:bg-neutral-100 hover:border-cyan-400 transition-all duration-200 cursor-pointer flex items-center justify-center gap-2">
                     <svg className="w-5 h-5 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
                     </svg>
@@ -113,8 +113,8 @@ export const ContactForm = () => {
                   </div>
                 </label>
               </div>
-              <p className="text-white/80 text-sm mt-2">
-                {fileName && <span className="text-cyan-300 font-medium">{fileName}</span>}
+              <p className="text-neutral-600 text-sm mt-2">
+                {fileName && <span className="text-cyan-600 font-medium">{fileName}</span>}
                 {!fileName && "Max. file size: 512 MB"}
               </p>
             </div>

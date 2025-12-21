@@ -11,7 +11,7 @@ export const ServicesSection = () => {
               <div 
                 className="text-sm bg-no-repeat bg-cover box-border caret-transparent flex flex-col grow justify-center leading-[20.3px] max-w-full min-h-[350px] min-w-px break-words w-full bg-[position:left_40%] m-5 md:text-[17px] md:leading-[24.65px] md:min-h-[auto] md:bg-[position:left_0%] rounded-lg"
                 style={{
-                  backgroundImage: `url('${encodeURI("/softwash2.jpg")}')`,
+                  backgroundImage: `url('${encodeURI("/about.jpg")}')`,
                 }}
               ></div>
             </div>

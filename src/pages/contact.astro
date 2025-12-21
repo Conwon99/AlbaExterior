@@ -1,0 +1,48 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { ContactFormSection } from '@/sections/ContactFormSection';
+---
+
+<BaseLayout title="Contact Us | Get A Free Quote | Alba Exteriors">
+  <div
+    role="main"
+    class="text-sm bg-white box-border caret-transparent leading-[20.3px] break-words md:text-[17px] md:leading-[24.65px]"
+  >
+    <!-- Hero Section with Background Image -->
+    <div class="relative text-sm box-border caret-transparent flex items-center justify-center leading-[20.3px] break-words h-[400px] md:text-[17px] md:h-[500px] md:leading-[24.65px] overflow-hidden">
+      <div
+        class="absolute inset-0 bg-no-repeat bg-cover bg-center"
+        style={`background-image: url('${encodeURI("/services/pressurewashing.png")}');`}
+      />
+      <div class="absolute inset-0 bg-black/50" />
+      <div class="relative text-sm box-border caret-transparent z-10 leading-[20.3px] break-words text-center md:text-[17px] md:leading-[24.65px]">
+        <h1 class="text-white text-4xl italic font-bold box-border caret-transparent leading-[50px] break-words uppercase font-kanit md:text-6xl md:leading-[70px] drop-shadow-lg">
+          Get A Free Quote
+        </h1>
+      </div>
+    </div>
+
+    <!-- Contact Section with Form -->
+    <div class="relative text-sm items-center box-border caret-transparent flex justify-center leading-[20.3px] break-words px-5 py-10 md:text-[17px] md:leading-[24.65px] md:px-5 md:py-16">
+      <div class="text-sm box-border caret-transparent grow leading-[20.3px] max-w-[800px] break-words mx-auto md:text-[17px] md:leading-[24.65px]">
+        <div class="text-sm box-border caret-transparent flex flex-col leading-[20.3px] break-words md:text-[17px] md:leading-[24.65px]">
+          <!-- Contact Form -->
+          <div class="text-sm box-border caret-transparent flex flex-col leading-[20.3px] break-words w-full md:text-[17px] md:leading-[24.65px]">
+            <div class="text-sm box-border caret-transparent flex flex-col leading-[20.3px] break-words mb-6 md:text-[17px] md:leading-[24.65px]">
+              <h2 class="text-neutral-900 text-3xl font-bold box-border caret-transparent leading-[40px] break-words mb-4 md:text-4xl md:leading-[50px]">
+                Request Your Free Quote
+              </h2>
+              <p class="text-neutral-700 text-base box-border caret-transparent leading-[24px] break-words mb-4 md:text-lg md:leading-[26px]">
+                Fill out the form below and we'll get back to you as soon as possible with a free, no-obligation quote for your exterior cleaning needs.
+              </p>
+            </div>
+            <div id="contact">
+              <ContactFormSection client:load />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+

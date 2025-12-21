@@ -93,8 +93,8 @@ export const MobileMenu = () => {
                 </li>
                 <li>
                   <a
-                    href="#services"
-                    onClick={(e) => handleNavClick(e, "services")}
+                    href="/services"
+                    onClick={() => setIsOpen(false)}
                     className="text-white text-lg font-semibold box-border caret-transparent block tracking-[1px] leading-7 break-words uppercase py-4 px-3 hover:text-cyan-600 transition-colors text-center"
                   >
                     Services
@@ -102,8 +102,7 @@ export const MobileMenu = () => {
                 </li>
                 <li>
                   <a
-                    href="#contact"
-                    onClick={(e) => handleNavClick(e, "contact")}
+                    href="/contact"
                     className="text-white text-lg font-semibold box-border caret-transparent block tracking-[1px] leading-7 break-words uppercase py-4 px-3 hover:text-cyan-600 transition-colors text-center"
                   >
                     Contact

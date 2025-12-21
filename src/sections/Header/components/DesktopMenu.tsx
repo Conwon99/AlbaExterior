@@ -53,14 +53,7 @@ export const DesktopMenu = () => {
         </li>
         <li className="relative text-base box-border caret-transparent list-item leading-[23.2px] break-words mx-0 my-[5px] md:mx-[15px] md:my-0">
           <a
-            href="#services"
-            onClick={(e) => {
-              e.preventDefault();
-              const element = document.getElementById("services");
-              if (element) {
-                element.scrollIntoView({ behavior: "smooth", block: "start" });
-              }
-            }}
+            href="/services"
             className="text-cyan-600 font-semibold box-border caret-transparent block tracking-[1px] leading-4 break-words uppercase py-[5px] hover:text-sky-300 transition-colors"
           >
             <span className="text-white box-border caret-transparent break-words w-full">
@@ -70,14 +63,7 @@ export const DesktopMenu = () => {
         </li>
         <li className="relative text-base box-border caret-transparent list-item leading-[23.2px] break-words mx-0 my-[5px] md:mx-[15px] md:my-0">
           <a
-            href="#contact"
-            onClick={(e) => {
-              e.preventDefault();
-              const element = document.getElementById("contact");
-              if (element) {
-                element.scrollIntoView({ behavior: "smooth", block: "start" });
-              }
-            }}
+            href="/contact"
             className="text-cyan-600 font-semibold box-border caret-transparent block tracking-[1px] leading-4 break-words uppercase py-[5px] hover:text-sky-300 transition-colors"
           >
             <span className="text-white box-border caret-transparent break-words w-full">
